@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -14.5, "left": 129.4, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 44.8,
+      "left": -186.4,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -9.3, "left": 263.4, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": 9.6, "left": -240.6, "attrs": {} },
+    { "type": "wokwi-vcc", "id": "vcc1", "top": 48.76, "left": -240, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "dht1:VCC", "esp:3V3", "green", [ "v0" ] ],
+    [ "dht1:SDA", "esp:D15", "blue", [ "v0" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "gnd1:GND", "lcd1:GND", "black", [ "v0", "h48" ] ],
+    [ "vcc1:VCC", "lcd1:VCC", "red", [ "v0", "h28.8", "v-9.6" ] ],
+    [ "lcd1:SCL", "esp:D22", "green", [ "h-76.8", "v-153.3", "h508.8", "v67.2" ] ],
+    [ "lcd1:SDA", "esp:D21", "gold", [ "h-19.2", "v-124.6", "h441.6", "v76.8" ] ]
+  ],
+  "dependencies": {}
+}
