@@ -8,14 +8,14 @@ Design and program any electronic circuit containing ESP with any sensor or elec
 #### 
 A temperature and humidity sensor is a device that detects and measures the temperature and the humidity of its environment and converts that measurement into an electrical signal. These sensors are commonly used in a variety of applications, from industrial processes to consumer products.
 #### 
-### 1- The Initial Goal:
+### The Initial Goal:
 #### 
 To use DHT22 temperature and humidity sensor with ESP32, and to display the output values on I2C LCD.
 #### 
-### 2- The Function of the Electrical Circuit:
+### The Function of the Electrical Circuit:
 Detects and measures the temperature and the humidity of the surrounding environment and converts that measurement into an electrical signal.
 #### 
-### 2- Simulation Program:
+### Simulation Program:
 #### 
 Wokwi.
 #### 
