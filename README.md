@@ -12,6 +12,9 @@ A temperature and humidity sensor is a device that detects and measures the temp
 #### 
 To use DHT22 temperature and humidity sensor with ESP32, and to display the output values on I2C LCD.
 #### 
+### 2- The Function of the Electrical Circuit:
+Detects and measures the temperature and the humidity of the surrounding environment and converts that measurement into an electrical signal.
+#### 
 ### 2- Simulation Program:
 #### 
 Wokwi.
